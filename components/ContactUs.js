@@ -86,8 +86,8 @@ export default function ContactUsSection() {
                   </svg>
                 }
                 title="Email"
-                content="bhavuprajapati98@gmail.com"
-                link="mailto:bhavuprajapati98@gmail.com"
+                content="Hecomputers2710@outlook.com"
+                link="mailto:Hecomputers2710@outlook.com"
               />
               <ContactInfoItem
                 icon={
