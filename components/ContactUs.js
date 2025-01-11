@@ -65,9 +65,8 @@ export default function ContactUsSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800">Email</p>
-                  <a href="mailto:bhavuprajapati98@gmail.com" className="text-blue-600 hover:text-blue-700">
-                    bhavuprajapati98@gmail.com
-                  </a>
+                  <a href="mailto:Hecomputers2710@outlook.com" className="text-blue-600 hover:text-blue-700">
+                  Hecomputers2710@outlook.com                  </a>
                 </div>
               </div>
 
