@@ -6,9 +6,9 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const menuItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
