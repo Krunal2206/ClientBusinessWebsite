@@ -3,7 +3,7 @@ import BackToTopButton from "@/components/BackToTopButton";
 import ContactUsSection from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
+import ServicesSection from "@/components/Services/ServicesSection";
 
 export default function Home() {
   return (
