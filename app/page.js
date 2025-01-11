@@ -1,4 +1,4 @@
-import AboutSection from "@/components/AboutSection";
+import AboutSection from "@/components/About/AboutSection";
 import BackToTopButton from "@/components/BackToTopButton";
 import ContactUsSection from "@/components/ContactUs";
 import Footer from "@/components/Footer";
