@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
     return (
       <section className="relative bg-gradient-to-r from-[#00c6ff] to-[#0072ff] py-16 mt-16">
@@ -21,18 +23,18 @@ export default function HeroSection() {
           
           {/* Call to Action Buttons */}
           <div className="mt-6 flex space-x-4">
-            <a
+            <Link
               href="#services"
               className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100"
             >
               Explore Services
-            </a>
-            <a
+            </Link>
+            <Link
               href="#contact"
               className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100"
             >
               Contact Us Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>
