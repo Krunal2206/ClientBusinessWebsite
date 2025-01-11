@@ -1,5 +1,19 @@
 import React from "react";
 
+const coreValues = [
+  { title: "Innovation", description: "Continuously evolving to provide cutting-edge solutions." },
+  { title: "Integrity", description: "Building trust through honest and transparent services." },
+  { title: "Customer Satisfaction", description: "Always putting customer needs first." },
+  { title: "Reliability", description: "Ensuring dependable IT solutions every time." },
+];
+
+const whyChooseUs = [
+  { title: "Expert Team", description: "Certified professionals with years of experience." },
+  { title: "Comprehensive Solutions", description: "From software to hardware, we cover it all." },
+  { title: "Affordable Services", description: "Cost-effective IT solutions without compromising quality." },
+  { title: "Tailored Support", description: "Personalized services to meet your specific needs." },
+];
+
 const SectionHeader = ({ title }) => (
   <h3 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
     <span className="w-2 h-8 bg-blue-500 mr-4"></span>
@@ -29,20 +43,7 @@ const Card = ({ title, items }) => (
 );
 
 export default function AboutSection() {
-  const coreValues = [
-    { title: "Innovation", description: "Continuously evolving to provide cutting-edge solutions." },
-    { title: "Integrity", description: "Building trust through honest and transparent services." },
-    { title: "Customer Satisfaction", description: "Always putting customer needs first." },
-    { title: "Reliability", description: "Ensuring dependable IT solutions every time." },
-  ];
-
-  const whyChooseUs = [
-    { title: "Expert Team", description: "Certified professionals with years of experience." },
-    { title: "Comprehensive Solutions", description: "From software to hardware, we cover it all." },
-    { title: "Affordable Services", description: "Cost-effective IT solutions without compromising quality." },
-    { title: "Tailored Support", description: "Personalized services to meet your specific needs." },
-  ];
-
+  
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="container mx-auto px-4">
