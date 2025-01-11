@@ -19,7 +19,7 @@ const ContactInfoItem = ({ icon, title, content, link }) => (
 );
 
 export default function ContactUsSection() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", contact: "", message: "" });
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -94,6 +94,19 @@ export default function ContactUsSection() {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-blue-500 transition duration-200"
                   placeholder="john@example.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Contact Number</label>
+                <input
+                  type="tel"
+                  name="contact"
+                  value={formData.contact}
+                  onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-blue-500 transition duration-200"
+                  placeholder="+91-9876543210"
                   required
                 />
               </div>

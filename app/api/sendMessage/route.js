@@ -5,10 +5,10 @@ export async function POST(req) {
   const body = await req.json();
 
   // Extract data from the request body
-  const { name, email, message } = body;
+  const { name, email, contact, message } = body;
 
   // Validate required fields
-  if (!name || !email || !message) {
+  if (!name || !email || !contact || !message) {
     return NextResponse.json({ error: "All fields are required." }, { status: 400 });
   }
 
@@ -29,6 +29,7 @@ export async function POST(req) {
       You have received a new message from your website:
       - Name: ${name}
       - Email: ${email}
+      - Contact: ${contact}
       - Message: ${message}
     `,
   };

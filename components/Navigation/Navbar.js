@@ -13,7 +13,7 @@ const menuItems = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md shadow-md z-50" role="navigation" aria-label="Main navigation">
+    <nav className="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-sm shadow-md z-50" role="navigation" aria-label="Main navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex items-center">
