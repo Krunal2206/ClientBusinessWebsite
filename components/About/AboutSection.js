@@ -7,9 +7,9 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         {/* Main About Section */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-2">About Us</h2>
+          <h2 className="text-4xl font-bold text-black mb-2">About Us</h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-4 text-lg text-black max-w-3xl mx-auto leading-relaxed">
             H & E Computer Sales & Services is a trusted provider of comprehensive IT solutions. From licensed
             software and hardware to advanced networking and security systems, we are committed to helping businesses
             and individuals achieve their technology goals. Our team ensures innovative and reliable services to keep

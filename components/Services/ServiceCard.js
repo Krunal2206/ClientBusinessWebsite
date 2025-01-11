@@ -6,8 +6,8 @@ const ServiceCard = ({ imageSrc, title, description }) => (
       <div className="relative w-full h-48 mb-4">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="fill" className="rounded" />
       </div>
-      <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-      <p className="mt-4 text-gray-600">{description}</p>
+      <h3 className="text-xl font-semibold text-black">{title}</h3>
+      <p className="mt-4 text-black">{description}</p>
     </div>
   );
 

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 export default function HamburgerMenu({menuItems}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,20 +15,11 @@ export default function HamburgerMenu({menuItems}) {
         onClick={() => setIsOpen(!isOpen)}
         className="text-gray-800 focus:outline-none"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5"
-          />
-        </svg>
+      {isOpen ? (
+        <MdClose className="h-6 w-6" />
+      ) : (
+        <GiHamburgerMenu className="h-6 w-6" />
+      )}
       </button>
 
       {/* Mobile menu */}

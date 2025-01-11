@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 
 const SectionHeader = ({ title }) => (
-    <h3 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+    <h3 className="text-2xl font-semibold text-black mb-6 flex items-center">
       <span className="w-2 h-8 bg-blue-500 mr-4"></span>
       {title}
     </h3>
@@ -12,8 +12,8 @@ const ListItem = ({ title, description }) => (
     <li className="flex items-start">
       <span className="text-blue-500 mr-2">&#8226;</span>
       <div>
-        <span className="font-bold text-gray-700">{title}:</span>
-        <span className="text-gray-600"> {description}</span>
+        <span className="font-bold text-black">{title}:</span>
+        <span className="text-black"> {description}</span>
       </div>
     </li>
   );
