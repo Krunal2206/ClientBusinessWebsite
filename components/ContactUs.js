@@ -48,8 +48,7 @@ export default function ContactUsSection() {
           <div className="mt-6 space-y-4">
             <p className="flex items-center text-gray-800 font-semibold">
               <span className="font-bold mr-2">Email:</span>
-              bhavuprajapati98@gmail.com
-            </p>
+              Hecomputers2710@outlook.com            </p>
             <p className="flex items-center text-gray-800 font-semibold">
               <span className="font-bold mr-2">Phone:</span>
               +91-9727139719

@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import BackToTopButton from "@/components/BackToTopButton";
 import ContactUsSection from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <ServicesSection />
       <AboutSection />
       <ContactUsSection />
+      <BackToTopButton />
       <Footer />
     </div>
   );
