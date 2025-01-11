@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const coreValues = [
   { title: "Innovation", description: "Continuously evolving to provide cutting-edge solutions." },
@@ -31,9 +32,21 @@ const ListItem = ({ title, description }) => (
   </li>
 );
 
-const Card = ({ title, items }) => (
-  <div className="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+const Card = ({ title, items, imageSrc }) => (
+  <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300">
+    {/* Image */}
+    <div className="relative w-full h-56 mb-6 overflow-hidden rounded-t-lg">
+      <Image
+        src={imageSrc}
+        alt={title}
+        layout="fill"
+        objectFit="cover"
+        className="rounded-t-lg"
+      />
+    </div>
+    {/* Title */}
     <SectionHeader title={title} />
+    {/* List Items */}
     <ul className="space-y-4">
       {items.map((item, index) => (
         <ListItem key={index} title={item.title} description={item.description} />
@@ -43,7 +56,6 @@ const Card = ({ title, items }) => (
 );
 
 export default function AboutSection() {
-  
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="container mx-auto px-4">
@@ -61,8 +73,16 @@ export default function AboutSection() {
 
         {/* Core Values & Why Choose Us Grid */}
         <div className="grid md:grid-cols-2 gap-12 mt-16">
-          <Card title="Our Core Values" items={coreValues} />
-          <Card title="Why Choose Us?" items={whyChooseUs} />
+          <Card
+            title="Our Core Values"
+            items={coreValues}
+            imageSrc="/AboutImg.jpg" // Replace with actual path
+          />
+          <Card
+            title="Why Choose Us?"
+            items={whyChooseUs}
+            imageSrc="/about2.jpg" // Replace with actual path
+          />
         </div>
       </div>
     </section>
