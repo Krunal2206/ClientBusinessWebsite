@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function HamburgerMenu() {
+
+
+export default function HamburgerMenu({menuItems}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -33,42 +35,17 @@ export default function HamburgerMenu() {
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-lg">
           <ul className="flex flex-col space-y-4 p-4">
-            <li>
-              <Link
-                href="/"
-                className="block text-gray-600 hover:text-blue-500 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className="block text-gray-600 hover:text-blue-500 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/services"
-                className="block text-gray-600 hover:text-blue-500 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="block text-gray-600 hover:text-blue-500 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
-            </li>
+            {menuItems.map(({ label, href }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="block text-gray-700 hover:text-white hover:bg-[#00c6ff] font-semibold text-lg p-1 pl-2 rounded-lg"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       )}
