@@ -18,7 +18,7 @@ export default function AboutSection() {
         </div>
 
         {/* Core Values & Why Choose Us Grid */}
-        <div className="grid md:grid-cols-2 gap-12 mt-16">
+        <div className="grid md:grid-cols-2 gap-12 mt-16 overflow-hidden">
           <AboutCardContainer />
         </div>
       </div>
