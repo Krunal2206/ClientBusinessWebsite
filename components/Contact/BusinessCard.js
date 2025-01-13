@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInRight } from "@/utils/animation";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa"; // Import Instagram Icon
 
 const ContactInfoItem = ({ icon, title, content, link }) => (
   <div className="flex items-start space-x-4">
@@ -12,7 +13,7 @@ const ContactInfoItem = ({ icon, title, content, link }) => (
     <div>
       <p className="font-semibold text-black">{title}</p>
       {link ? (
-        <a href={link} className="text-blue-600 hover:text-blue-700">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700">
           {content}
         </a>
       ) : (
@@ -49,8 +50,8 @@ const BusinessCard = () => {
         <ContactInfoItem
           icon={<FiMail className="w-6 h-6" />}
           title="Email"
-          content="Hecomputers2710@outlook.com"
-          link="mailto:Hecomputers2710@outlook.com"
+          content="hecomputers2710@gmail.com"
+          link="mailto:hecomputers2710@gmail.com"
         />
         <ContactInfoItem
           icon={<FiPhone className="w-6 h-6" />}
@@ -62,6 +63,12 @@ const BusinessCard = () => {
           icon={<FiMapPin className="w-6 h-6" />}
           title="Address"
           content="16, Vakhariya Nagar-3, Near Kapileshwar Mahadev Temple, Kalol (N.G.), Pin-382721, Dist. Gandhinagar, Gujarat"
+        />
+        <ContactInfoItem
+          icon={<FaInstagram className="w-6 h-6 text-pink-500" />} // Instagram Icon with style
+          title="Instagram"
+          content="@hecomputersales"
+          link="https://www.instagram.com/hecomputersales?igsh=bzJ2OWRzYnY1OWZv&utm_source=qr"
         />
       </div>
     </motion.div>

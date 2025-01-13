@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hecomputersolutions.in
+
+# Sitemaps
+Sitemap: https://hecomputersolutions.in/sitemap.xml

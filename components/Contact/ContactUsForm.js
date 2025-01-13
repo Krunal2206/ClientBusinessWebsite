@@ -32,7 +32,12 @@ const ContactUsForm = () => {
       });
 
       if (res.ok) {
-        form.reset();
+        setFormData({
+          name: "",
+          email: "",
+          contact: "",
+          message: "",
+        }); // Clear form fields
         setStatus("Message sent successfully!");
       } else {
         const error = await res.json();
